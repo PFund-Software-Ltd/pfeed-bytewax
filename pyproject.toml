@@ -1,29 +1,24 @@
 [project]
-name = "bytewax"
-requires-python = ">=3.8"
+name = "pfeed-bytewax"
+version = "0.0.1.dev1"
+license = "Apache-2.0"
+readme = "README.md"
+requires-python = ">=3.11"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Operating System :: OS Independent",
     "Programming Language :: Rust",
     "Programming Language :: Python :: Implementation :: CPython",
-    "Programming Language :: Python :: Implementation :: PyPy",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
     "Topic :: System :: Networking",
     "Topic :: System :: Distributed Computing",
 ]
 dependencies = [
     "typing_extensions>=4",
     "prometheus-client>=0.18"
-]
-
-extras = [
-    "kafka",
 ]
 
 [project.optional-dependencies]
@@ -38,10 +33,6 @@ kafka = [
 Issues = "https://github.com/bytewax/bytewax/issues"
 Documentation = "https://docs.bytewax.io/"
 Changelog = "https://github.com/bytewax/bytewax/blob/main/CHANGELOG.md"
-
-[metadata]
-long_description = "file: README.md"
-long_description_content_type = "text/markdown"
 
 [build-system]
 requires = ["maturin>=1.0,<2.0"]

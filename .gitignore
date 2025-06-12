@@ -87,3 +87,16 @@ pyrightconfig.json
 # Devenv stuff
 .devenv.flake.nix
 devenv.*
+
+# local stuff
+**/.local/
+
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
